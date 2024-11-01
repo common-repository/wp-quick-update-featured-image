@@ -1,0 +1,40 @@
+.featured-img-container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.contorls-featured-action {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.featured-img-container:hover .image {
+  opacity: 0.1;
+}
+
+.featured-img-container:hover .contorls-featured-action {
+  opacity: 1;
+  
+
+}
+
+.feat-actions {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;  
+}
